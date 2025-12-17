@@ -2,7 +2,7 @@
 
 This repository contains my personal resume/portfolio website — a single-page CV built with plain HTML and CSS and deployed on Vercel.
 
-> 🔗 **Live site:** _add your Vercel URL here_  
+> 🔗 **Live site:**
 > e.g. `https://melissanagrampa.vercel.app`
 
 ---
