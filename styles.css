@@ -155,8 +155,8 @@ body {
 /* Photo */
 
 .photo-wrapper {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
   border-radius: 999px;
   overflow: hidden;
   border: 2px solid rgba(148, 163, 184, 0.5);
@@ -164,6 +164,13 @@ body {
   position: relative;
   isolation: isolate;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (min-width: 900px) {
+  .photo-wrapper {
+    width: 340px;
+    height: 340px;
+  }
 }
 
 .photo-wrapper::before {
@@ -410,11 +417,15 @@ body {
     padding-top: 3.5rem;
   }
 
-  .hero-inner {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-  }
+.hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
 
   .hero-left {
     align-items: center;
@@ -490,6 +501,7 @@ body {
 }
 
 #education .edu-item {
+  border-left: 4px solid transparent;
   background-image: linear-gradient(var(--card-bg), var(--card-bg)),
     linear-gradient(to bottom, #22ce5e, #22ce5e);
   background-origin: border-box;
